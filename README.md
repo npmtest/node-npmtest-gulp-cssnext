@@ -1,6 +1,6 @@
 # npmtest-gulp-cssnext
 
-#### basic test coverage for  [gulp-cssnext (v1.0.1)](http://cssnext.io/)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-cssnext.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-cssnext) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-cssnext.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-cssnext)
+#### basic test-coverage for  [gulp-cssnext (v1.0.1)](http://cssnext.io/)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-cssnext.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-cssnext) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-cssnext.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-cssnext)
 
 #### Use tomorrow's CSS syntax, today, using cssnext via Gulp
 
@@ -35,9 +35,35 @@
 ```json
 
 {
-    "name": "gulp-cssnext",
-    "version": "1.0.1",
+    "author": {
+        "name": "bloodyowl"
+    },
+    "bugs": {
+        "url": "https://github.com/cssnext/gulp-cssnext/issues"
+    },
+    "dependencies": {
+        "cssnext": "^1.0.0",
+        "gulp-util": "^3.0.0",
+        "through2": "^0.6.1"
+    },
+    "deprecated": "cssnext is now postcss-cssnext. gulp-cssnext is deprecated. Use gulp-postcss instead. See postcss-cssnext migration guide http://cssnext.io/postcss/",
     "description": "Use tomorrow's CSS syntax, today, using cssnext via Gulp",
+    "devDependencies": {
+        "eslint": "^0.22.1",
+        "tape": "^3.0.0"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "46b79aa4a7db17d838d2598cdf7ea247b5a9ecdc",
+        "tarball": "https://registry.npmjs.org/gulp-cssnext/-/gulp-cssnext-1.0.1.tgz"
+    },
+    "files": [
+        "CHANGELOG.md",
+        "LICENSE",
+        "index.js"
+    ],
+    "gitHead": "639fdf7da824ace049daad4ac44376f21f4e7d03",
+    "homepage": "http://cssnext.io/",
     "keywords": [
         "css",
         "cssnext",
@@ -49,34 +75,27 @@
         "gulp",
         "gulpplugin"
     ],
-    "author": "bloodyowl",
     "license": "MIT",
+    "maintainers": [
+        {
+            "name": "bloodyowl"
+        },
+        {
+            "name": "moox"
+        }
+    ],
+    "name": "gulp-cssnext",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
         "url": "git://github.com/cssnext/gulp-cssnext.git"
     },
-    "homepage": "http://cssnext.io/",
-    "bugs": {
-        "url": "https://github.com/cssnext/gulp-cssnext/issues"
-    },
-    "files": [
-        "CHANGELOG.md",
-        "LICENSE",
-        "index.js"
-    ],
-    "dependencies": {
-        "cssnext": "^1.0.0",
-        "gulp-util": "^3.0.0",
-        "through2": "^0.6.1"
-    },
-    "devDependencies": {
-        "eslint": "^0.22.1",
-        "tape": "^3.0.0"
-    },
     "scripts": {
         "lint": "eslint .",
         "test": "npm run lint && tape 'test/**.js'"
-    }
+    },
+    "version": "1.0.1",
+    "bin": {}
 }
 ```
 
